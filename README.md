@@ -2,7 +2,7 @@
 <!--diferentes comillas según lenguaje-->
 <p lang="fr"> <q>HOLA</q></p>
 <p lang="en"> <q>HOLA</q></p>
-
+```
 <main> 
     <section>
         <header>
@@ -12,4 +12,6 @@
     </section>
     <section></section>
 </main>
+```
+
    
