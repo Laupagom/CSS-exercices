@@ -32,3 +32,19 @@ span p::first-letter{
 .profesional h3{
     color:skyblue;
 }
+
+/*  class */
+h2.border-1{
+    border: red 3px dotted;
+}
+h2.border-2{
+    border: blue 3px dotted;
+}
+h2.border-1.border-2{
+    border: blue 3px solid;
+}
+
+/*  misma class distintos elementos */
+.border-1{
+    border: red 3px dotted;
+}
