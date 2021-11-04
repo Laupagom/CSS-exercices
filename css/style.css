@@ -1,3 +1,4 @@
+ 
 /* bloque de  declaración */
 body{
     background-color: beige;
@@ -44,4 +45,54 @@ li{
 }
 .fila1{
     background-color: powderblue;
+}
+/*  pseudoclase de estado  */
+a:hover{
+    color:blue
+}
+a:visited{
+    color:blue
+}
+a:link{
+    color:peru
+}
+
+/*  pseudoclase de relación  */
+div h3:only-of-type{
+    color:green
+}
+
+/*  pseudoclase de posición padre  */
+div p:last-child{
+    color:red;
+  }
+
+/*  pseudoclase nth hijo. si quieto la class se pinta el tercer div
+.three div:nth-child(3) {
+    color:pink;
+}
+*/
+
+/*  pseuelemento parte del elemento */
+span p::first-letter{
+    color:rosybrown
+}
+.profesional h3{
+    color:skyblue;
+}
+
+/*  class */
+h2.border-1{
+    border: red 3px dotted;
+}
+h2.border-2{
+    border: blue 3px dotted;
+}
+h2.border-1.border-2{
+    border: blue 3px solid;
+}
+
+/*  misma class distintos elementos */
+.border-1{
+    border: red 3px dotted;
 }
