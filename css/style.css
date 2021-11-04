@@ -1,0 +1,47 @@
+/* bloque de  declaración */
+body{
+    background-color: beige;
+    margin:0px;
+    padding:0px;
+}
+/* selector de elemento */
+img{
+   height: auto;
+}
+dialog{
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% -50%);
+    width: 100%;
+}
+/* fonts */
+
+h1 {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 50px;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Epilogue', sans-serif;
+}
+p{
+    font-family: 'Epilogue', sans-serif;
+    line-height: 30px;
+}
+li{
+    font-family: 'Epilogue', sans-serif;
+    line-height: 30px;
+}
+
+/* background */
+.topbar{
+    background-color:pink;
+}
+.fila1{
+    background-color: powderblue;
+}
