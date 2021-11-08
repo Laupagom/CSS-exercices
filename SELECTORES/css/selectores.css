@@ -1,0 +1,103 @@
+body{
+    background-color: pink;
+}
+
+/* LINKS */
+a{
+    font-weight: 600;
+    color:green;
+}
+a:visited{
+    color:white;
+}
+.accion{
+    color:red;
+}
+a:visited.accion{
+    color:blue;
+}
+a:hover.accion{
+    color:green;
+}
+a:hover{
+    color:green;
+}
+a:focus{
+     border: 0px dotted grey;
+     background-color: rgb(196, 196, 196);
+}
+/* INPUT */
+
+input[type="text"]:focus {
+    box-shadow: 0 0 5px 5px peru; 
+}
+input:focus{
+    box-shadow: 0 0 5px 5px red;
+}
+
+/* cambia el color del texto que está al lado del checkbox */
+
+input:checked + p{
+    color:peru;
+}
+input{
+    padding: 6px;
+    margin: 6px;
+}
+
+
+
+/* ESPECIFICIDAD */
+
+p{
+    color:red;
+}
+
+span{
+    color:green;
+}
+
+p span{
+    color:fuchsia
+}
+.span{
+    color:yellow;
+}
+span.span{
+    color:brown;
+}
+p span.span{
+    color:blue;
+}
+/* el PARRAFO es el padre, el SPAN hijo */
+.parrafo .span{
+    color:black;
+}
+p.parrafo span.span{
+    color:chartreuse;
+}
+#idspan{
+    color:cyan;
+}
+
+
+/* Circulo, supersosición de sombras */
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    border-radius: 100%;
+    box-shadow: 0 0 15px 15px purple,
+    0px 0px 25px 25px peru,
+    0px 0px 40px 40px white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:60px auto;
+}
+.numero{
+    font-size:80px;
+    text-align: center;
+    color:white;
+}
