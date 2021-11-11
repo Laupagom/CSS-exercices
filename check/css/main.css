@@ -18,9 +18,7 @@
   z-index: 2;
 
 }
-/* cuadno el imput esté marcado quiero que el label tenga color rojo */
-.checkbox__field:checked + .checkbox__label {
-} 
+/* cuadno el imput esté marcado quiero que el label tenga color rojo */ 
 .checkbox__field:checked + label div {
   color: blue;
 }
@@ -111,8 +109,7 @@ content: ""
   z-index: 2;
 }
 /* cuadno el imput esté marcado quiero que el label tenga color rojo */
-.radio__field:checked + .radio__label {
-} 
+
 .radio__field:checked + label div {
   color: blue;
 }
@@ -220,8 +217,7 @@ box-shadow: inset 0 0 0 2px blue;
   z-index: 2;
 }
 /* cuadno el imput esté marcado quiero que el label tenga color rojo */
-.switch__field:checked + .switch__label {
-} 
+ 
 .switch__field:checked + label div {
   color: blue;
 }
