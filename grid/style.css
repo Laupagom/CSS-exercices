@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+  }
+  
+  .grid__cell-100 {
+    background-color: pink;
+    flex: 0 0 calc(100% - 18px);
+  }
+  
+  .grid__cell-50 {
+    background-color: pink;
+    flex: 0 0 calc(50% - 18px);
+  }
+  
+  .grid__cell-25 {
+    background-color: rgb(221, 77, 99);
+    color: white;
+    flex: 0 0 calc(25% - 18px);
+  }
+
+  @media all and (max-width: 600px) {
+    .grid__cell-50,
+    .grid__cell-25{
+        flex: 0 0 calc(100% - 18px);
+    } 
+}
+
+[class^="grid__cell"] {
+    border: 8px  solid white;
+    margin: 8px;
+    padding: 2%;
+
+}
+
+img {
+    max-width: 100%;
+}
