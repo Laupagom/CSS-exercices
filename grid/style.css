@@ -2,7 +2,28 @@
     box-sizing: border-box;
   }
 
-/************ body *****************/
+/*--------------------------------------------------* HTML
+--------------------------------------------------*/
+
+/* img 
+  figure {
+    figure img {
+    }
+    figure figcaption{  meter el texto de pie de página}
+    }
+  }
+*/
+  img {
+    max-width: 100%;
+ }
+
+ .asterisco{
+   font-size: 40px;
+   color: red;
+ }
+  
+/*--------------------------------------------------* BODY
+--------------------------------------------------*/
 body {
   font-size: 20px;
   background-color: pink;
@@ -10,7 +31,8 @@ body {
   padding: 0;
 }  
 
-/************ structure grid *****************/
+/*--------------------------------------------------* STRUCTURE GRID
+--------------------------------------------------*/
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -43,18 +65,15 @@ body {
   .grid__cell--25 {
     color: white;
     flex: 0 0 calc(25% - 18px);
-  }
+  } 
 
-/************ img *****************/
-  img {
-    max-width: 100%;
- } 
-
-/************ media *****************/
+/*--------------------------------------------------* MEDIA RESPONSIVE
+--------------------------------------------------*/
   @media all and (max-width: 600px) {
     .grid__cell--50,
     .grid__cell--25{
         flex: 0 0 calc(100% - 18px);
     } 
 }
+  
 
