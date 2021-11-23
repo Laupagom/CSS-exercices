@@ -1,0 +1,24 @@
+/*--------------------------------------------------* STRUCTURE GRID
+--------------------------------------------------*/
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+
+    &__cell {
+        @include margin(12px);
+
+        &--100 {
+            flex: 0 0 calc(100% - 18px); 
+        }
+        &--75 {
+            flex: 0 0 calc(75% - 18px); 
+        }
+        &--50 {
+            @include gridcell  (50%);
+        }
+        &--25 {
+            flex: 0 0 calc(25% - 18px);
+        }
+    }
+}

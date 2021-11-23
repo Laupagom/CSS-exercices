@@ -1,0 +1,52 @@
+/*--------------------------------------------------* STRUCTURE GRID
+--------------------------------------------------*/
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid white;
+}
+.grid__cell {
+  padding: grid__cell space;
+}
+.grid__cell--100 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% - 18px);
+          flex: 0 0 calc(100% - 18px);
+}
+.grid__cell--75 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(75% - 18px);
+          flex: 0 0 calc(75% - 18px);
+}
+.grid__cell--50 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 18px);
+          flex: 0 0 calc(50% - 18px);
+}
+.grid__cell--25 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(25% - 18px);
+          flex: 0 0 calc(25% - 18px);
+}
+
+.asterisco {
+  font-size: 40px;
+  color: red;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*--------------------------------------------------* BODY
+--------------------------------------------------*/
+body {
+  font-size: 20px;
+  background-color: pink;
+  margin: 0;
+  padding: 0;
+}

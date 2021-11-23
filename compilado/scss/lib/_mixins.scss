@@ -1,0 +1,10 @@
+/* utilizades para hacer cálculos directos. 
+            Ej: para los calc */
+
+@mixin gricell ($width: 100%) {
+    flex: 0 0 calc($width - 18px); 
+}
+
+@mixin margin ($value: &unit) {
+    margin: $value - 1px;
+}
