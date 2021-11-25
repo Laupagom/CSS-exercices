@@ -1,0 +1,26 @@
+.card-links{
+    display:inline-block;
+    padding: $space--medium;
+    background-color: $bgcard;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &:visited {
+        color: white;
+    }
+
+}
+
+.card {
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    height: 234px;
+    left: 525px;
+    right: 555px;
+    top: 420px;
+    border-radius: 30px;
+    display: flex;
+}

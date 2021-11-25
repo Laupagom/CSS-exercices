@@ -1,22 +1,30 @@
-/*--------------------------------------------------* STRUCTURE GRID
---------------------------------------------------*/
 .grid {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid white;
-
+    
+    /* "&" el padre */
     &__cell {
-        @include margin(12px);
 
         &--100 {
             flex: 0 0 calc(100% - 18px); 
         }
+        
         &--75 {
             flex: 0 0 calc(75% - 18px); 
         }
-        &--50 {
-            @include gridcell  (50%);
+
+        &--65 {
+            flex: 0 0 calc(65% - 18px);
         }
+
+        &--50 {
+            flex: 0 0 calc(50% - 18px); 
+        }
+
+        &--35 {
+            flex: 0 0 calc(35% - 18px); 
+        }
+
         &--25 {
             flex: 0 0 calc(25% - 18px);
         }

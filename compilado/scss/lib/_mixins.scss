@@ -1,10 +1,18 @@
-/* utilizades para hacer cálculos directos. 
-            Ej: para los calc */
 
-@mixin gricell ($width: 100%) {
-    flex: 0 0 calc($width - 18px); 
+@mixin fontStyle ($fontSize) {
+    color: white;
+    font-size: $fontSize;
+    font-style: Helvetica, Sans-Serif;
 }
 
-@mixin margin ($value: &unit) {
-    margin: $value - 1px;
+h3 {
+
+    @include fontStyle (40px);
+
 }
+
+p {
+
+    @include fontStyle (18px);
+}
+
