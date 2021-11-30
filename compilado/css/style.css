@@ -15,6 +15,54 @@ p {
           box-sizing: border-box;
 }
 
+
+h3,
+p {
+  color: #ffffff;
+}
+
+.pastilla {
+  padding: 0px;
+  text-align: center;
+  position: relative;
+}
+
+.avatar {
+  padding: 0px;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background-color: grey;
+  border: 3px solid white;
+  background-image: url("../img/pexels-photo-2709386.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+.avatar__edit {
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  padding-top: 8px;
+  position: absolute;
+  left: calc(50% - 1em);
+  bottom: 6.5em;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.avatar__edit:hover {
+  -webkit-transform: scale 1.5 rontat;
+          transform: scale 1.5 rontat;
+}
+
+.avatar__edit {
+  text-align: center;
+}
+
 /*--------------------------------------------------* BODY
 --------------------------------------------------*/
 body {
@@ -102,75 +150,16 @@ https://placekitten.com/170/170
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+ 
 }
 .card-links:visited {
   color: white;
 }
 
 .card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 0px;
-  height: 234px;
-  left: 525px;
-  right: 555px;
-  top: 420px;
   border-radius: 30px;
-  display: flex;
-}
-
-h3,
-p {
-  color: #ffffff;
-}
-
-.pastilla {
-  padding: 0px;
-  left: 629px;
-  top: 118px;
-  text-align: center;
-  position: relative;
-}
-
-.avatar {
-  padding: 0px;
-  width: 250px;
-  height: 250px;
-  border-radius: 100%;
-  background-color: grey;
-  border: 3px solid white;
-  background-image: url("../img/pexels-photo-2709386.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: inline-block;
-}
-.avatar__edit {
-  background-color: white;
-  display: inline-block;
-  text-align: center;
-  height: 2em;
-  width: 2em;
-  border-radius: 50%;
-  padding-top: 8px;
-  position: absolute;
-  left: calc(50% - 1em);
-  bottom: 6.5em;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-.avatar__edit:hover {
-  -webkit-transform: scale 1.5 rontat;
-          transform: scale 1.5 rontat;
-}
-
-.avatar__edit {
-  text-align: center;
 }
