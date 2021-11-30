@@ -2,17 +2,18 @@
 @mixin fontStyle ($fontSize) {
     color: white;
     font-size: $fontSize;
-    font-style: Helvetica, Sans-Serif;
+    font-family: Helvetica, Sans-Serif;
 }
 
 h3 {
-
+    line-height: 0px;
     @include fontStyle (40px);
-
 }
 
 p {
 
     @include fontStyle (18px);
 }
-
+a 
+{    @include fontStyle (18px);
+}

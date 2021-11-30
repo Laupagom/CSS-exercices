@@ -1,7 +1,5 @@
 .pastilla {
     padding: 0px;
-    left: 629px;
-    top: 118px;
     text-align: center;
     position: relative;
 }
@@ -30,13 +28,12 @@
       padding-top: 8px;
       position: absolute;
       left: calc(50% - 1em);
-      bottom: 6.5em;
+      bottom: 4.5em;
       transition: all 0.2s ease-in;
 
       &:hover {
         transform: scale (1.5) rontat;
       }
-
 
 
     }

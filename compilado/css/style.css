@@ -1,66 +1,25 @@
 h3 {
+  line-height: 0px;
   color: white;
   font-size: 40px;
-  font-style: Helvetica, Sans-Serif;
+  font-family: Helvetica, Sans-Serif;
 }
 
 p {
   color: white;
   font-size: 18px;
-  font-style: Helvetica, Sans-Serif;
+  font-family: Helvetica, Sans-Serif;
+}
+
+a {
+  color: white;
+  font-size: 18px;
+  font-family: Helvetica, Sans-Serif;
 }
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-
-h3,
-p {
-  color: #ffffff;
-}
-
-.pastilla {
-  padding: 0px;
-  text-align: center;
-  position: relative;
-}
-
-.avatar {
-  padding: 0px;
-  width: 250px;
-  height: 250px;
-  border-radius: 100%;
-  background-color: grey;
-  border: 3px solid white;
-  background-image: url("../img/pexels-photo-2709386.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: inline-block;
-}
-.avatar__edit {
-  background-color: white;
-  display: inline-block;
-  text-align: center;
-  height: 2em;
-  width: 2em;
-  border-radius: 50%;
-  padding-top: 8px;
-  position: absolute;
-  left: calc(50% - 1em);
-  bottom: 6.5em;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-.avatar__edit:hover {
-  -webkit-transform: scale 1.5 rontat;
-          transform: scale 1.5 rontat;
-}
-
-.avatar__edit {
-  text-align: center;
 }
 
 /*--------------------------------------------------* BODY
@@ -111,24 +70,46 @@ body {
           flex: 0 0 calc(25% - 18px);
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 60px 0;
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-ul li {
-  display: inline-block;
-}
-ul li a {
-  /*nesting=anidado*/
-  text-decoration: none;
-  text-transform: uppercase;
+
+.button {
+  background: #ECECEC;
+  border-radius: 15px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
-  font-family: sans-serif;
-  font-size: 23px;
-  color: white;
-  padding: 20px;
-  background-color: darkblue;
+  font-weight: bold;
+  color: #7f7f7f;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #fff;
+  border: 1px solid #a7a7a7;
+  width: 120px;
+  margin: 10px 10px 0px 0px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  position: relative;
+}
+.button:nth-child(2) {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.button:hover {
+  -webkit-box-shadow: 0px 2px 1px white inset, 0px -2px 20px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 1px white inset, 0px -2px 20px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+}
+.button:active {
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5) inset, 0px -2px 20px white, 0px 1px 5px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5) inset, 0px -2px 20px white, 0px 1px 5px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
+  background: -webkit-linear-gradient(top, #d1d1d1 0%, #ECECEC 100%);
 }
 
 /*
@@ -136,6 +117,26 @@ ul li a {
 https://placekitten.com/170/170
 
 */
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  border-radius: 30px;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
 .card-links {
   display: inline-block;
   padding: 24px;
@@ -150,16 +151,64 @@ https://placekitten.com/170/170
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
- 
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
 }
 .card-links:visited {
   color: white;
 }
+.card-links svg {
+  margin-bottom: 10px;
+}
 
-.card {
+h3,
+p {
+  color: #ffffff;
+}
+
+.pastilla {
+  padding: 0px;
+  text-align: center;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 30px;
+}
+
+.avatar {
+  padding: 0px;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background-color: grey;
+  border: 3px solid white;
+  background-image: url("../img/pexels-photo-2709386.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+.avatar__edit {
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  padding-top: 8px;
+  position: absolute;
+  left: calc(50% - 1em);
+  bottom: 4.5em;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.avatar__edit:hover {
+  -webkit-transform: scale 1.5 rontat;
+          transform: scale 1.5 rontat;
+}
+
+.avatar__edit {
+  text-align: center;
 }
