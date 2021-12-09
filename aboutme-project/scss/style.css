@@ -1,0 +1,194 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*--------------------------------------------------* BODY
+--------------------------------------------------*/
+body {
+  background-color: #1B201A;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding: 0;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* "&" el padre */
+}
+.grid__cell--100 {
+  margin-bottom: 120px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% - 18px);
+          flex: 0 0 calc(100% - 18px);
+}
+.grid__cell--85 {
+  margin-bottom: 60px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(85% - 18px);
+          flex: 0 0 calc(85% - 18px);
+}
+.grid__cell--75 {
+  margin-bottom: 120px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(75% - 18px);
+          flex: 0 0 calc(75% - 18px);
+}
+.grid__cell--65 {
+  margin-bottom: 120px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(65% - 18px);
+          flex: 0 0 calc(65% - 18px);
+}
+.grid__cell--50 {
+  margin-bottom: 120px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 18px);
+          flex: 0 0 calc(50% - 18px);
+}
+.grid__cell--35 {
+  margin-bottom: 120px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(35% - 18px);
+          flex: 0 0 calc(35% - 18px);
+}
+.grid__cell--25 {
+  margin-bottom: 120px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(25% - 18px);
+          flex: 0 0 calc(25% - 18px);
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button {
+  background: none;
+  border-radius: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  margin: 10px 10px 0px 0px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  position: relative;
+}
+.button:nth-child(2) {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.button:hover {
+  background-color: #227767;
+  border: 1px solid #227767;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("typography/qanelas/Qanelas-Regular.eot") format("eot"), url("typography/qanelas/Qanelas-Regular.ttf") format("ttf"), url("typography/qanelas/Qanelas-Regular.woff") format("woff"), url("typography/qanelas/Qanelas-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Migra";
+  src: url("typography/migra/Migra-Extralight.ttf") format("ttf"), url("typography/migra/Migra-Extralight.woff") format("woff"), url("typography/migra/Migra-Extralight.woff2") format("woff2");
+  font-stretch: extra-light;
+  font-weight: 100;
+}
+h1 {
+  color: #ffffff;
+  font-size: 130px;
+  line-height: 130px;
+  font-family: migra;
+  text-transform: uppercase;
+  margin: 0px 0px;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 70px;
+  line-height: 85px;
+  font-family: migra;
+  text-transform: uppercase;
+  margin: 0px 0px;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: migra;
+  text-transform: uppercase;
+  margin: 0px 0px;
+}
+
+h4 {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: migra;
+  text-transform: none;
+  margin: 0px 0px;
+}
+
+p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Qanelas-Regular;
+  text-transform: none;
+  margin: 0px 0px;
+}
+
+a {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 0px;
+  font-family: Qanelas-Regular;
+  text-transform: uppercase;
+  margin: 0px 0px;
+}
+
+hr.solid {
+  border: 0, 25px solid #ffffff;
+  margin-bottom: 120px;
+}
+
+.symbol {
+  display: inline-block;
+  color: #227767;
+  -webkit-animation: simple-rotate 1s 1s linear infinite;
+  animation: simple-rotate 2s 2s linear infinite;
+}
+@-webkit-keyframes simple-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes simple-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

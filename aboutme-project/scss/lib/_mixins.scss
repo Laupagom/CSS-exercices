@@ -1,0 +1,8 @@
+@mixin fontStyle ($fontSize, $lineheight, $fontFamily, $textTransform) {
+    color: #ffffff;
+    font-size: $fontSize;
+    line-height: $lineheight;
+    font-family: $fontFamily;
+    text-transform: $textTransform;
+    margin: 0px 0px;
+}

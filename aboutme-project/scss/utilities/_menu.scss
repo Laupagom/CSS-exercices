@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    
+    }
+
+    
+.button {
+        background: none;
+        border-radius: 35px;
+        display: flex;
+        text-align: center;
+        font-weight: bold;
+        color: $colorfont;
+        text-decoration: none;
+        border:1px solid $colorborderbuttom;
+        margin: 10px 10px 0px 0px;
+        justify-content: right; 
+        position: relative;
+
+        &:nth-child(2) {
+            margin-left: auto;
+            display: flex;
+        }
+
+        &:hover{
+            background-color: $colorsymbol;
+            border:1px solid $colorsymbol;
+          }
+}

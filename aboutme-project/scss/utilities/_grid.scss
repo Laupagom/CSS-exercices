@@ -1,0 +1,44 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    
+    /* "&" el padre */
+    &__cell {
+
+        &--100 {
+            margin-bottom: $space;
+            flex: 0 0 calc(100% - 18px);
+        }
+
+        &--85 {
+            margin-bottom: 60px;
+            flex: 0 0 calc(85% - 18px); 
+        }
+        
+        &--75 {
+            margin-bottom: $space;
+            flex: 0 0 calc(75% - 18px); 
+        }
+
+        &--65 {
+            margin-bottom: $space;
+            flex: 0 0 calc(65% - 18px);
+        }
+
+        &--50 {
+            margin-bottom: $space;
+            flex: 0 0 calc(50% - 18px); 
+        }
+
+        &--35 {
+            margin-bottom: $space;
+            flex: 0 0 calc(35% - 18px); 
+        }
+
+        &--25 {
+            margin-bottom: $space;
+            flex: 0 0 calc(25% - 18px);
+        }
+    }
+}
