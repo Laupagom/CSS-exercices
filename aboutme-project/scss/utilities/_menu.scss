@@ -3,14 +3,28 @@
     
     }
 
-    
+.icono-hand {
+        margin-left: 4px;
+}
+.button__available {
+        display: flex;
+        text-align: center;
+        justify-content: right; 
+        position: relative;
+        margin-left: auto;
+        display: flex;
+        color: $colorsymbol;
+        bottom: -0.6em;
+        margin-right: 30px;
+        letter-spacing: 1px;
+}
+   
 .button {
+        padding: 8px 13px 8px 13px;
         background: none;
         border-radius: 35px;
         display: flex;
         text-align: center;
-        font-weight: bold;
-        color: $colorfont;
         text-decoration: none;
         border:1px solid $colorborderbuttom;
         margin: 10px 10px 0px 0px;

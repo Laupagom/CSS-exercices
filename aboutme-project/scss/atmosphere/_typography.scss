@@ -46,5 +46,6 @@ p {
 }
 
 a {    
-    @include fontStyle (18px, 0px, Qanelas-Regular, uppercase);
+    @include fontStyle (18px, 15px, Qanelas-Regular, uppercase);
+    letter-spacing: 1px;
 }

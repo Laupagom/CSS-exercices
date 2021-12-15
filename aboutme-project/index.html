@@ -10,8 +10,10 @@
 <body>
     <nav class="menu">
         <a href="#" class="button">Long out</a>
-        <p class="button">AVAILABLE TO WORK</p>
-        <a href="mailto: laura.parrenogoomez@gmail.com"; class="button">Long out</a>
+        <p class="button__available">AVAILABLE TO WORK</p>
+        <a href="mailto: laura.parrenogoomez@gmail.com"; class="button">SALUDA<svg class="icono-hand" width="14" height="16" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.9416 7.77869C13.173 9.59478 11.8865 11.3779 10.0721 11.7559L9.96726 10.9329C11.3377 10.6474 12.2942 9.32167 12.1194 7.95L12.9416 7.77869ZM0.182948 4.80462C-0.048457 2.98853 1.23804 1.20539 3.05246 0.827356L3.15733 1.65036C1.78692 1.93588 0.830415 3.26164 1.00519 4.6333L0.182948 4.80462ZM3.83273 2.53472L1.63825 5.58282C0.0982773 7.71728 0.463911 10.5868 2.45411 11.9858C4.4443 13.3847 7.3112 12.7874 8.85117 10.6529L12.231 5.95543C12.4668 5.64159 12.4115 5.20815 12.1087 4.99526C11.8058 4.78238 11.3728 4.8726 11.1384 5.19741L9.02454 8.12733L8.58571 7.81886L11.7135 3.48365C11.9478 3.15884 11.8926 2.72539 11.5897 2.51251C11.2869 2.29962 10.8484 2.39099 10.6085 2.71694L7.83268 6.5902L7.40341 6.26848L10.6876 1.70354C10.9219 1.37873 10.8667 0.945284 10.5639 0.732399C10.261 0.519515 9.82796 0.60974 9.59361 0.93455L6.29846 5.50177L5.86033 5.19879L8.49211 1.56394C8.73193 1.23799 8.6767 0.804544 8.36837 0.592802C8.06003 0.381059 7.63246 0.470143 7.39812 0.794953L3.75384 5.84608C4.53236 6.56815 4.63006 7.8207 3.94207 8.78073L3.50324 8.47226C4.0628 7.6967 3.92997 6.65423 3.20682 6.14591L2.99049 5.99385L4.93698 3.29594C5.17132 2.97113 5.11609 2.53769 4.81324 2.3248C4.5056 2.11855 4.07255 2.20877 3.83273 2.53472Z" fill="white"/>
+            </svg></a>
     </nav>
 
     <div class="grid">
@@ -71,26 +73,53 @@
 
         <div class="grid__cell--50">
             <h3><span class="symbol">*</span>I'LL CALL YOU!</h3>        
-        <form class="formulario">
+           
+            <form action="" method="POST">
 
-                <label for="subject"></label>
-                <input type="text" name="" id="subject" placeholder="Subject">
-
-                <label for="message"></label>
-                <textarea type="textarea" name="" id="message" placeholder="Message"></textarea>
-
-                <label for="name"></label>
-                <input type="text" name="" id="name" placeholder="Name">
+                <section class="col col50">
+                    <div class="input">
+                      <label for="firstname"></label>
+                      <input type="text" id="firstname" placeholder="Nombre" class="field" required>
+                    </div>
+                  </section>
+                  
+                  <section class="col col50">
+                    <div class="input">
+                      <label for="telefon"></label>
+                      <input type="tel" id="telefon" placeholder="Teléfono" class="field" required>
+                    </div>
+                  </section>
+                </div>
+               
+                  <section class="col col100">
+                    <div class="input">
+                      <label for="email"></label>
+                      <input type="email" id="email" placeholder="Email" class="field" required>
+                    </div>
+                  </section>
+                </div>
+            
+                  <section class="col">
+                    <div class="input">
+                    <label for="text"></label>
+                      <textarea id="text" class="field" placeholder="Mensaje" rows="6"></textarea>
+                    </div>
+                  </section>
+                </div>
+                  <div class="col col33">
                 
-                <label for="mail"></label>
-                <input type="mail" name="" id="mail" placeholder="Email">
-
-                <label for="tel"></label>
-                <input type="tel" name="" id="tel" placeholder="Phone Number">
-
-                <input type="submit" value="Send Message" class="button">
-
-        </form>
+                  </div>
+                  
+                  <div class="col col33">
+                    <label class="textlabel checkbox">
+                      <input type="checkbox" name="agb" value="ja" checked>
+                        Acepto la <a href="#">política de privacidad</a> de esta página
+                    </label>
+                  </div>
+            
+            
+                <button class="button" type="submit">SUBMIT</button>
+              </form>
         </div>
 
     </div>
