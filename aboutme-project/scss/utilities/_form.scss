@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bitter|Dosis:400,700');
 
-$base-color: #143544;
-$standard-distance: 24px;
-$orange-faded: rgb(255, 238, 231);
 
 html {
   box-sizing: border-box;
@@ -14,18 +10,19 @@ html {
   box-sizing: inherit;
 }
 
+.content {
+  margin: 15px;
+}
+
 a {
-  color: $base-color;
+  color:  $colorfont;
   text-decoration: none;
 }
 
-form {
-  padding: 0 ($standard-distance/2);
-}
 
 .col {
- margin-bottom: $standard-distance;
  width: 100%;
+ color: $colorbg;
 }
 
 @media (min-width: 400px) {
@@ -33,7 +30,10 @@ form {
   .col {
     float: left;
     margin-bottom: 0;
-    padding-left: $standard-distance;
+
+    &.col100 {
+      width: 100%;
+    }
     
     &.col50 {
       width: 50%;
@@ -47,28 +47,19 @@ form {
       width: 25%;
     }
   }
-  form {
-    padding: 0 ($standard-distance);
-  }
 }
 
-.wrapper {
-  height: 100vh;
-  margin: 0 auto;
-  max-width: 640px;
-}
 
-//////// styling form
 
-textarea {
-  width: 100%;
-}
+// styling form
 
 label, .label {
-  border: 1px;
+  border: 0px;
   display: block;
   font-size: 0.9em;
   margin-bottom: 5px;
+  background-color: $colorbg;
+  padding-left: 30px;
   
   &.checkbox {
     width: 100%;
@@ -76,57 +67,10 @@ label, .label {
 }
 
 .field {
-  border: 0px;
-  margin: 5px 0;
-  padding: 5px;
   width: 100%;
-  
-  &:focus {
-    box-shadow: 0 0 10px white;
-  }
-}
-
-// Styling der Navigation
-
-ul {
-  margin: 0 0 45px;
-  padding: 5px 0;
-}
-
-li {
-  display: block;
-  list-style: none;
-  text-align: center;
-  
-  a {
-    display: inline-block;
-    font-weight: 700;
-    height: 100%;
-    margin: 10px auto;
-    padding-top: 4px;
-    width: 100%;
-  }
-}
-
-@media (min-width: 400px) {
-  
-  ul {
-    height: 54px;
-    overflow: hidden;
-    width: 100%;
-    
-    li {
-      display: inline-block;
-      margin-top: 0;
-      width: 25%;
-      
-      &:hover {
-        border-bottom: 5px solid orangered;
-      }
-    }
-  }
 }
 
 .input {
-      border-bottom: 2px solid #41B5E6;
+      border-bottom: 2px solid $colorsymbol;
+      background-color: $colorbg;
     }
