@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+    /*--------------------------------------------------* BODY
+  --------------------------------------------------*/
+body {
+    background-color: $colorbg;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: 0;
+}
+
+
+img {
+    max-width: 100%;
+}
