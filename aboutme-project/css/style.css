@@ -79,6 +79,12 @@ img {
           flex: 0 0 calc(25% - 18px);
   margin-bottom: 120px;
 }
+.grid__cell--15 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(15% - 18px);
+          flex: 0 0 calc(15% - 18px);
+  margin-bottom: 120px;
+}
 
 .menu {
   display: -webkit-box;
