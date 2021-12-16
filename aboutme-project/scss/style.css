@@ -19,8 +19,6 @@ h1 {
 --------------------------------------------------*/
 body {
   background-color: #1B201A;
-  margin-left: 120px;
-  margin-right: 120px;
   padding: 0;
 }
 
@@ -89,6 +87,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 25px;
 }
 
 .icono-hand {
@@ -107,7 +106,7 @@ img {
   margin-left: auto;
   display: flex;
   color: #227767;
-  bottom: -1.1em;
+  bottom: -0.7em;
   margin-right: 30px;
   letter-spacing: 1px;
 }
@@ -487,15 +486,24 @@ label.checkbox, .label.checkbox {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .avatar {
   padding: 0px;
-  width: 70%;
-  height: 90%;
+  width: 100%;
   background-image: url("utilities/img/IMG_20200830ss_231652 1.jpeg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: auto;
-  display: inline-block;
+}
+
+.content-width {
+  margin-left: 120px;
+  margin-right: 120px;
 }
