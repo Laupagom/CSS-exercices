@@ -7,7 +7,6 @@ p {
 
 @font-face {
     font-family: 'Qanelas';
-    font-weight: $fontQanelasRegular;
     
     src: url('typography/qanelas/Qanelas-Regular.eot') format('eot'),
       url('typography/qanelas/Qanelas-Regular.ttf') format('ttf'),
@@ -44,14 +43,24 @@ h4 {
     @include fontStyle (24px, 40px, migra, none);
   }
 
-p {
+h5 {
     font-weight: $fontQanelasRegular;
-    @include fontStyle (18px, 30px, Qanelas-Regular, none);
+    letter-spacing: 1px;
+    @include fontStyle (15px, 15px, Qanelas-Regular, uppercase);
   }
 
-a {
-         font-weight: $fontQanelasRegular;
-         letter-spacing: 1px;
-    
-    @include fontStyle (14px, 15px, Qanelas-Regular, uppercase);
-       }
+h6 {
+    font-weight: $fontQanelasRegular;
+    @include fontStyle (12px, 15px, Qanelas-Regular, none);
+  }
+
+p {
+    font-weight: $fontQanelasRegular;
+    @include fontStyle (16px, 30px, Qanelas-Regular, none);
+  }
+
+a.button {
+    font-weight: $fontQanelasRegular;
+    letter-spacing: 1px;
+    @include fontStyle (15px, 15px, Qanelas-Regular, uppercase);
+  }

@@ -1,5 +1,3 @@
-
-
 html {
   box-sizing: border-box;
 }
@@ -16,9 +14,7 @@ html {
 
 a {
   color:  $colorfont;
-  text-decoration: none;
 }
-
 
 .col {
  width: 100%;
@@ -70,9 +66,157 @@ label, .label {
   width: 100%;
   background: none;
   border: none;
+  color: white;
+  height: 15px;
 }
 
 .input {
   border-bottom: 2px solid $colorsymbol;
+  margin: $margin;
+}
 
+//RADIO
+
+/* RADIO */
+
+.radio {
+  position: relative;
+}
+.radio__field{
+  font-size:inherit;
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+}
+/* alinear el contenido texto en la línea del cuadrado */
+.radio__label{
+  color: white;
+  display: inline-flex;
+  align-items:center;
+  position: relative;
+  z-index: 2;
+}
+/* 
+-Pseudoelementos: solo pueden llevarlos los elementos con contenido.
+-Siempre tiene que llevar "content"
+*/
+/* CHECK */
+.radio__label::after {
+  content: ""
+  }
+.radio__label::before {
+content: "";
+background-color: white;;
+display: inline-block;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+margin-right: 10px;
+box-shadow: inset 0 0 0 2px blue;
+}
+
+/* cuando no está checkeado */
+.radio__field + .radio__label::after {
+  background-color: blue;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  opacity: 0;
+  transition: opacity eease .3s;
+}
+/* cuando está checkeado */
+.radio__field:checked + .radio__label::after {
+  opacity: 1;
+  
+}
+
+
+/* CHECKBOX */
+
+.checkbox {
+  position: relative;
+}
+.checkbox__field{
+  font-size:inherit;
+  position:absolute;
+  left: 0px;
+  top: 1px;
+  z-index: 1;
+}
+/* alinear el contenido texto en la línea del cuadrado */
+.checkbox__label{
+  display: inline-flex;
+  align-items:center;
+  position: relative;
+  z-index: 2;
+
+}
+/* cuadno el imput esté marcado quiero que el label tenga color rojo */ 
+.checkbox__field:checked + label div {
+  color: blue;
+}
+ 
+/* 
+-Pseudoelementos: solo pueden llevarlos los elementos con contenido.
+-Siempre tiene que llevar "content"
+*/
+  
+
+
+
+
+/* CHECK */
+.checkbox__label::before {
+background: url(../img/check-solid.svg) center 20px no-repeat white;
+content: "";
+display: inline-block;
+width: 20px;
+height: 20px;
+border-radius: 2px;
+margin-right: 10px;
+box-shadow: inset 0 0 0 2px blue;
+transition: 
+  background-color ease .3s,
+  background-position ease .3s;
+}
+.checkbox__field:checked + .checkbox__label::before {
+  background-position: center;
+  background-color: blue;
+  color: white;
+  background-size: 12px;
+}
+.checkbox__label::after {
+content: ""
+}
+
+
+
+
+/* FOCUS */
+.checkbox__field:focus + .checkbox__label::before{
+  box-shadow:
+    0 0 2px 2px white, 
+    0 0 3px 3px rgb(189, 189, 189),
+    inset 0 0 0 2px blue;
+}  
+ /* darle color a un div que hay dentro de un label  
+  input:checked + label div {
+    color: blue;
+  }
+  */
+
+
+
+
+
+/* ESTILO LISTADOS */
+.code__items{
+  margin: 2em;
+  padding:0;
+  list-style: none;
 }
