@@ -24,6 +24,11 @@ body {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
