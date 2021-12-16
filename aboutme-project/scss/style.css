@@ -1,3 +1,14 @@
+/*-------
+@mixin respond-to ($breakpoint) {
+    @if map-has-key ($breakpoint $resolution)
+    @content;
+}
+
+h1 {
+    @include respond-to (12)
+
+}
+----*/
 @import url("https://fonts.googleapis.com/css?family=Bitter|Dosis:400,700");
 * {
   -webkit-box-sizing: border-box;
@@ -22,46 +33,46 @@ body {
   /* "&" el padre */
 }
 .grid__cell--100 {
-  margin-bottom: 120px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(100% - 18px);
           flex: 0 0 calc(100% - 18px);
+  margin-bottom: 120px;
 }
 .grid__cell--85 {
-  margin-bottom: 60px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(85% - 18px);
           flex: 0 0 calc(85% - 18px);
+  margin-bottom: 60px;
 }
 .grid__cell--75 {
-  margin-bottom: 120px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(75% - 18px);
           flex: 0 0 calc(75% - 18px);
+  margin-bottom: 120px;
 }
 .grid__cell--65 {
-  margin-bottom: 120px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(65% - 18px);
           flex: 0 0 calc(65% - 18px);
+  margin-bottom: 120px;
 }
 .grid__cell--50 {
-  margin-bottom: 120px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(50% - 18px);
           flex: 0 0 calc(50% - 18px);
+  margin-bottom: 120px;
 }
 .grid__cell--35 {
-  margin-bottom: 120px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(35% - 18px);
           flex: 0 0 calc(35% - 18px);
+  margin-bottom: 120px;
 }
 .grid__cell--25 {
-  margin-bottom: 120px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(25% - 18px);
           flex: 0 0 calc(25% - 18px);
+  margin-bottom: 120px;
 }
 
 .menu {
@@ -92,7 +103,7 @@ body {
 }
 
 .button {
-  padding: 8px 13px 8px 13px;
+  padding: 7px 13px 7px 13px;
   background: none;
   border-radius: 35px;
   display: -webkit-box;
@@ -128,69 +139,73 @@ p {
 
 @font-face {
   font-family: "Qanelas";
+  font-weight: 200;
   src: url("typography/qanelas/Qanelas-Regular.eot") format("eot"), url("typography/qanelas/Qanelas-Regular.ttf") format("ttf"), url("typography/qanelas/Qanelas-Regular.woff") format("woff"), url("typography/qanelas/Qanelas-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: normal;
 }
 @font-face {
   font-family: "Migra";
   src: url("typography/migra/Migra-Extralight.ttf") format("ttf"), url("typography/migra/Migra-Extralight.woff") format("woff"), url("typography/migra/Migra-Extralight.woff2") format("woff2");
-  font-stretch: extra-light;
-  font-weight: 100;
 }
 h1 {
+  font-weight: 100;
   color: #ffffff;
+  font-family: migra;
   font-size: 130px;
   line-height: 130px;
-  font-family: migra;
-  text-transform: uppercase;
   margin: 0px 0px;
+  text-transform: uppercase;
 }
 
 h2 {
+  font-weight: 100;
   color: #ffffff;
+  font-family: migra;
   font-size: 70px;
   line-height: 85px;
-  font-family: migra;
-  text-transform: uppercase;
   margin: 0px 0px;
+  text-transform: uppercase;
 }
 
 h3 {
+  font-weight: 100;
   color: #ffffff;
+  font-family: migra;
   font-size: 30px;
   line-height: 30px;
-  font-family: migra;
-  text-transform: uppercase;
   margin: 0px 0px;
+  text-transform: uppercase;
 }
 
 h4 {
+  font-weight: 100;
+  letter-spacing: 1px;
   color: #ffffff;
-  font-size: 24px;
-  line-height: 30px;
   font-family: migra;
-  text-transform: none;
+  font-size: 24px;
+  line-height: 40px;
   margin: 0px 0px;
+  text-transform: none;
 }
 
 p {
+  font-weight: 200;
   color: #ffffff;
+  font-family: Qanelas-Regular;
   font-size: 18px;
   line-height: 30px;
-  font-family: Qanelas-Regular;
-  text-transform: none;
   margin: 0px 0px;
+  text-transform: none;
 }
 
 a {
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 15px;
-  font-family: Qanelas-Regular;
-  text-transform: uppercase;
-  margin: 0px 0px;
+  font-weight: 200;
   letter-spacing: 1px;
+  color: #ffffff;
+  font-family: Qanelas-Regular;
+  font-size: 14px;
+  line-height: 15px;
+  margin: 0px 0px;
+  text-transform: uppercase;
 }
 
 hr.solid {
@@ -219,6 +234,11 @@ hr.solid {
   }
 }
 
+.scroll {
+  -webkit-animation: simple-rotate 1s 1s linear infinite;
+  animation: simple-rotate 5s 5s linear infinite;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -241,15 +261,15 @@ form {
 }
 
 .col {
-  width: 100%;
   margin-bottom: 24px;
+  width: 100%;
 }
 
 @media (min-width: 400px) {
   .col {
     float: left;
-    padding-left: 24px;
     margin-bottom: 0;
+    padding-left: 24px;
   }
   .col.col50 {
     width: 50%;
@@ -266,9 +286,9 @@ form {
   }
 }
 .wrapper {
-  max-width: 640px;
   height: 100vh;
   margin: 0 auto;
+  max-width: 640px;
 }
 
 textarea {
@@ -276,20 +296,20 @@ textarea {
 }
 
 label, .label {
+  border: 1px;
   display: block;
   font-size: 0.9em;
   margin-bottom: 5px;
-  border: 1px;
 }
 label.checkbox, .label.checkbox {
   width: 100%;
 }
 
 .field {
-  width: 100%;
-  padding: 5px;
-  margin: 5px 0;
   border: 0px;
+  margin: 5px 0;
+  padding: 5px;
+  width: 100%;
 }
 .field:focus {
   -webkit-box-shadow: 0 0 10px white;
@@ -302,29 +322,29 @@ ul {
 }
 
 li {
+  display: block;
   list-style: none;
   text-align: center;
-  display: block;
 }
 li a {
-  height: 100%;
-  width: 100%;
-  padding-top: 4px;
   display: inline-block;
-  margin: 10px auto;
   font-weight: 700;
+  height: 100%;
+  margin: 10px auto;
+  padding-top: 4px;
+  width: 100%;
 }
 
 @media (min-width: 400px) {
   ul {
-    width: 100%;
     height: 54px;
     overflow: hidden;
+    width: 100%;
   }
   ul li {
     display: inline-block;
-    width: 25%;
     margin-top: 0;
+    width: 25%;
   }
   ul li:hover {
     border-bottom: 5px solid orangered;
@@ -332,4 +352,8 @@ li a {
 }
 .input {
   border-bottom: 2px solid #41B5E6;
+}
+
+.full-width {
+  height: 100vh;
 }

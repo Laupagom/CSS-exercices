@@ -7,45 +7,51 @@ p {
 
 @font-face {
     font-family: 'Qanelas';
+    font-weight: $fontQanelasRegular;
+    
     src: url('typography/qanelas/Qanelas-Regular.eot') format('eot'),
       url('typography/qanelas/Qanelas-Regular.ttf') format('ttf'),
       url('typography/qanelas/Qanelas-Regular.woff') format('woff'),
       url('typography/qanelas/Qanelas-Regular.woff2') format('woff2');
-    font-style: normal;
-    font-weight: normal;
   }
 
 @font-face {
     font-family: 'Migra';
+    
     src: url('typography/migra/Migra-Extralight.ttf') format('ttf'),
       url('typography/migra/Migra-Extralight.woff') format('woff'),
       url('typography/migra/Migra-Extralight.woff2') format('woff2');
-    font-stretch: extra-light;
-    font-weight: 100;
-}
-
+  }
 
 h1 {
+    font-weight: $fontMigraExtraLight;
     @include fontStyle (130px, 130px, migra, uppercase);
-}
+  }
 
 h2 {
+    font-weight: $fontMigraExtraLight;
     @include fontStyle (70px, 85px, migra, uppercase);
-}
+  }
 
 h3 {
+    font-weight: $fontMigraExtraLight;
     @include fontStyle (30px, 30px, migra, uppercase);
-}
+  }
 
 h4 {
-    @include fontStyle (24px, 30px, migra, none);
-}
+    font-weight: $fontMigraExtraLight;
+    letter-spacing: 1px;
+    @include fontStyle (24px, 40px, migra, none);
+  }
 
 p {
+    font-weight: $fontQanelasRegular;
     @include fontStyle (18px, 30px, Qanelas-Regular, none);
-}
+  }
 
-a {    
-    @include fontStyle (18px, 15px, Qanelas-Regular, uppercase);
-    letter-spacing: 1px;
-}
+a {
+         font-weight: $fontQanelasRegular;
+         letter-spacing: 1px;
+    
+    @include fontStyle (14px, 15px, Qanelas-Regular, uppercase);
+       }
