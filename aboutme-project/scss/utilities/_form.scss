@@ -68,9 +68,11 @@ label, .label {
 
 .field {
   width: 100%;
+  background: none;
+  border: none;
 }
 
 .input {
-      border-bottom: 2px solid $colorsymbol;
-      background-color: $colorbg;
-    }
+  border-bottom: 2px solid $colorsymbol;
+
+}

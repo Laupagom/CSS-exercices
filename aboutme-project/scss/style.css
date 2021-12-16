@@ -296,11 +296,12 @@ label.checkbox, .label.checkbox {
 
 .field {
   width: 100%;
+  background: none;
+  border: none;
 }
 
 .input {
   border-bottom: 2px solid #227767;
-  background-color: #1B201A;
 }
 
 .full-width {
