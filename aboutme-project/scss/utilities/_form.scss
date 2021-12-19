@@ -8,10 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-.content {
-  margin: 15px;
-}
-
 a {
   color:  $colorfont;
 }
@@ -45,8 +41,6 @@ a {
   }
 }
 
-
-
 // styling form
 
 label, .label {
@@ -76,8 +70,6 @@ label, .label {
 }
 
 //RADIO
-
-/* RADIO */
 
 .radio {
   position: relative;

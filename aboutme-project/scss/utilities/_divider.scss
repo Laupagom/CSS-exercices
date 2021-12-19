@@ -1,4 +1,11 @@
-hr.solid {
-    border: 0,25px solid $colorfont;
+hr.divider {
+    color: $colorfont;
+    
+    &--footerunder {
+        margin-top: $unit--medium;
+        margin-bottom: $space;
+    }
+    &--space {
     margin-bottom: $space;
+}
 }

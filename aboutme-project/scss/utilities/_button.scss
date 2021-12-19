@@ -1,0 +1,61 @@
+.icono-hand {
+    margin-left: 4px;
+}
+
+.button__available {
+    display: flex;
+    text-align: center;
+    justify-content: right; 
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    color: $colorsymbol;
+    bottom: -0.7em;
+    margin-right: 30px;
+    letter-spacing: 1px;
+}
+
+.button__menu {
+    padding: 7px 13px 7px 13px;
+    background: none;
+    border-radius: 35px;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    border:1px solid $colorborderbuttom;
+    margin: 10px 10px 0px 0px;
+    justify-content: right; 
+    position: relative;
+    color: $colorfont;
+
+    &:nth-child(2) {
+        margin-left: auto;
+        display: flex;
+    }
+
+    &:hover{
+        background-color: $colorsymbol;
+        border:1px solid $colorsymbol;
+    }
+}
+
+.button__footer {
+padding: 7px 13px 7px 13px;
+background: none;
+border-radius: 35px;
+display: flex;
+text-align: center;
+text-decoration: none;
+border:1px solid $colorborderbuttom;
+margin: 15px 10px 0px 0px;
+color: $colorfont; 
+
+    &:hover{
+        background-color: $colorsymbol;
+        border:1px solid $colorsymbol;
+  }
+
+  &--projects {
+    margin-left: $margin;
+} 
+}

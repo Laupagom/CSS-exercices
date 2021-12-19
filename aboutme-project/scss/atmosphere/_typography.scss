@@ -24,7 +24,7 @@ p {
 
 h1 {
     font-weight: $fontMigraExtraLight;
-    @include fontStyle (130px, 130px, migra, uppercase);
+    @include fontStyle (120px, 130px, migra, uppercase);
   }
 
 h2 {
@@ -59,8 +59,10 @@ p {
     @include fontStyle (16px, 30px, Qanelas-Regular, none);
   }
 
-a.button {
+a.button__menu,
+.button__footer {
     font-weight: $fontQanelasRegular;
     letter-spacing: 1px;
-    @include fontStyle (15px, 15px, Qanelas-Regular, uppercase);
+    @include fontStyle (15px, 16px, Qanelas-Regular, uppercase);
+    width: fit-content;
   }

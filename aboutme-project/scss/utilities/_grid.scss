@@ -1,13 +1,12 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
-    
+
     /* "&" el padre */
     &__cell {
 
         &--100 {
             flex: 0 0 calc(100% - 18px);
-            margin-bottom: $space;
         }
 
         &--85 {

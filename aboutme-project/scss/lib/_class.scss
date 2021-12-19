@@ -1,21 +1,31 @@
-.full-height {
+.full__height {
     height: 100vh;
-    align-items: center;
     display: flex;
     justify-content: center;
+    position: relative;
+
+    &--center {
+        align-items: center;
+    }
 }
 
-.avatar {
-    padding: 0px;
-    width: 100%;
-    background-image: url('utilities/img/IMG_20200830ss_231652 1.jpeg');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: auto;
-    
+.content-elements {
+    margin-left: $unit;
+    margin-right: $unit;
 }
 
 .content-width {
     margin-left: $space;
     margin-right: $space;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.paragraph-spacing {
+    padding-left: $margin;
+}
+.bgcolor-footer {
+    background: linear-gradient(180deg, rgba(27, 32, 26, 0) 55.83%, rgba(6, 210, 255, 0.1) 97.82%);
 }
