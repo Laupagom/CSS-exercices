@@ -9,10 +9,6 @@
     }
 }
 
-.content-elements {
-    margin-left: $unit;
-    margin-right: $unit;
-}
 
 .content-width {
     margin-left: $space;
@@ -25,7 +21,12 @@
 
 .paragraph-spacing {
     padding-left: $margin;
+    padding-right: $margin;
 }
 .bgcolor-footer {
     background: linear-gradient(180deg, rgba(27, 32, 26, 0) 55.83%, rgba(6, 210, 255, 0.1) 97.82%);
+}
+
+.top-space {
+    margin-top: $space;
 }

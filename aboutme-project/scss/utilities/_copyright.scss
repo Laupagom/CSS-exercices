@@ -1,0 +1,16 @@
+.copyright {
+    display: flex;
+    padding: 20px;
+
+    .copy {
+        text-align: center;
+        justify-content: center; 
+    
+        &:nth-child(2) {
+            margin-left: auto;
+            display: flex;
+        }
+    }
+}
+
+

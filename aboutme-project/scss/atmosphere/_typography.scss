@@ -65,4 +65,9 @@ a.button__menu,
     letter-spacing: 1px;
     @include fontStyle (15px, 16px, Qanelas-Regular, uppercase);
     width: fit-content;
-  }
+}
+
+a.privacity {
+  font-weight: $fontQanelasRegular;
+  @include fontStyle (12px, 15px, Qanelas-Regular, none);
+}

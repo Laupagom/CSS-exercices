@@ -21,9 +21,9 @@
 			</a>
 		</nav>
 <!--CABECERA-->
-		<main class= "content-width">
+		<main>
 			<header>
-					<section class="full__height--center grid avatar">
+					<section class="content-width full__height--center grid avatar">
 							<div class="grid__cell--85">
 									<h4>Hola! Soy Laura Parreño</h4>
 									<h1>DISEÑADORA WEB CON BASE EN VALENCIA</h1>
@@ -38,7 +38,7 @@
 			</header>
 
 <!--WHO WE ARE-->
-			<section class="full__height grid">
+			<section class="content-width full__height grid">
 				<div class="grid__cell--50">
 					<hr class="divider--space">
 					<h2><span class="symbol">*</span>WHO WE ARE?</h2>
@@ -55,7 +55,7 @@
 			</section>
 
 <!--EXPERIENCE-->
-			<section class="full__height grid">
+			<section class="content-width full__height grid">
 				<div class="grid__cell--50">
 					<hr class="divider--space">
 					<h2><span class="symbol">*</span>EXPERIENCE</h2>
@@ -63,17 +63,17 @@
 					<a href="#" class="button__footer--projects">PROJECTS</a>
 				</div>
 				<div class="grid__cell--50 paragraph-spacing ">
-					<h4>Studies</h4>
+					<h4 class="top-space">Studies</h4>
 					<hr class="divider">
 					<p>Lorem ipsum dolor, sit<sup class=asterisco>*</sup> amet consectetur adipisicing elit. Enim eveniet molestiae qui at omnis quia, quam quasi cupiditate dignissimos. Molestias, officiis. Quos iure itaque corporis commodi dolores? Fuga, sunt a.</p>
-					<h4>Professionally</h4>
+					<h4 class="top-space">Professionally</h4>
 					<hr class="divider">
 					<p>Lorem ipsum dolor, sit<sup class=asterisco>*</sup> amet consectetur adipisicing elit. Enim eveniet molestiae qui at omnis quia, quam quasi cupiditate dignissimos. Molestias, officiis. Quos iure itaque corporis commodi dolores? Fuga, sunt a.</p>
 				</div>
 			</section>
 
 <!--SKILLS-->
-			<section class="full__height grid">
+			<section class="content-width full__height grid">
 				<div class="grid__cell--50">
 					<hr class="divider--space">
 					<h2><span class="symbol">*</span>SKILLS</h2>
@@ -88,7 +88,7 @@
 
 <!--FOOTER-->
 
-			<section >
+			<section class="content-width">
 				<hr class="divider">
 				<div class="wrapper__text" >
 				<h4 class="marquee">
@@ -100,64 +100,71 @@
 			
 
 			<footer class="grid bgcolor-footer">
-				<div class="grid__cell--50">
-						<h3><span class="symbol">*</span>CONTACT</h3>
-						<a href="#" class="button__footer">DESIGN@LAURAPARRENO.COM</a>
-						<a href="#" class="button__footer">+34 665 187 677</a>
-				</div>
-				<div class="grid__cell--50">
-					<h3><span class="symbol">*</span>I'LL CALL YOU!</h3>
-					<form class="content">
-						<section class="col col50">
-							<div class="input">
-								<label for="firstname"></label>
-								<input type="text" id="firstname" placeholder="Nombre" class="field" required>
-							</div>
-						</section>						
-						<section class="col col50">
-							<div class="input">
-								<label for="telefon"></label>
-									<input type="tel" id="telefon" placeholder="Teléfono" class="field" required>
-							</div>
-						</section>
-						<section class="col col100">
-							<div class="input">
-								<label for="email"></label>
-								<input type="email" id="email" placeholder="Email" class="field" required>
-							</div>
-						</section>
-						<section class="col col100">
-							<div class="input">
-								<label for="text"></label>
-								<textarea id="text" class="field" placeholder="Mensaje" rows="6"></textarea>
-							</div>
-						</section>					
-						<section class="col col100">
-							<ol class="code__items">
-								<li class="code__item">
-										<div class="radio">
-											<input class="radio__field" type="radio" name="radios" id="r1" checked>
-											<label class="radio__label" for="r1">Teléfono</label>
-											<input class="radio__field" type="radio" name="radios" id="r2">
-											<label class="radio__label" for="r2">Email</label>
+				<section class="content-width grid">
+					<div class="grid__cell--50">
+							<h3><span class="symbol">*</span>CONTACT</h3>
+							<a href="#" class="button__footer">DESIGN@LAURAPARRENO.COM</a>
+							<a href="#" class="button__footer">+34 665 187 677</a>
+					</div>
+					<div class="grid__cell--50">
+						<h3><span class="symbol">*</span>I'LL CALL YOU!</h3>
+						<form class="content">
+							<section class="col col50">
+								<div class="input">
+									<label for="firstname"></label>
+									<input type="text" id="firstname" placeholder="Nombre" class="field" required>
+								</div>
+							</section>						
+							<section class="col col50">
+								<div class="input">
+									<label for="telefon"></label>
+										<input type="tel" id="telefon" placeholder="Teléfono" class="field" required>
+								</div>
+							</section>
+							<section class="col col100">
+								<div class="input">
+									<label for="email"></label>
+									<input type="email" id="email" placeholder="Email" class="field" required>
+								</div>
+							</section>
+							<section class="col col100">
+								<div class="input">
+									<label for="text"></label>
+									<textarea id="text" class="field" placeholder="Mensaje" rows="6"></textarea>
+								</div>
+							</section>					
+							<section class="col col100">
+								<ol class="code__items">
+									<li class="code__item">
+										<p>Contactarme por:</p>
+											<div class="radio">
+												<input class="radio__field" type="radio" name="radios" id="r1" checked>
+												<label class="radio__label" for="r1">Teléfono</label>
+												<input class="radio__field" type="radio" name="radios" id="r2">
+												<label class="radio__label" for="r2">Email</label>
+											</div>
+									</li>
+								</ol> 
+							</section>
+							<section class="col col100">
+								<ol class="code__items">
+									<li class="code__item">
+										<div class="checkbox">
+											<input class="checkbox__field" type="checkbox" name="checks" id="c1">
+											<label class="checkbox__label" for="c1"><h6 class="privacy">Acepto la <a href="#">política de privacidad</a> de esta página</h6></label>
 										</div>
-								</li>
-							</ol> 
-						</section>
-						<section class="col col100">
-							<ol class="code__items">
-								<li class="code__item">
-									<div class="checkbox">
-										<input class="checkbox__field" type="checkbox" name="checks" id="c1">
-										<label class="checkbox__label" for="c1"><h6 class="privacy">Acepto la <a href="#">política de privacidad</a> de esta página</h6></label>
-									</div>
-								</li>
-							</ol> 
-						</section>
-						<button class="button__footer" type="submit">ENVIAR</button>
-					</form>
-				</div>
+									</li>
+								</ol> 
+							</section>
+							<button class="button__footer" type="submit">ENVIAR</button>
+						</form>
+					</div>
+				</section>	
 			</footer>
+			<section class="copyright">
+				<h6 class="copy">© 2021 LAURA PARREÑO</h6>
+				<h6 class="copy">PHOTO BY MARIO G. GRULLÓN&nbsp;·&nbsp;FONTS BY PANGRAM PANGRAM Y RADOMIR TINKOV&nbsp;·&nbsp;<a class="privacity" href=""></h6>PRIVACY POLICY</a></h6>
+			</section>
 		</main>
 	</body>
 </html>
