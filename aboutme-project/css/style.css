@@ -21,6 +21,7 @@ body {
   background-color: #1B201A;
   padding: 0px;
   margin: 0px;
+  overflow-x: hidden;
 }
 
 img {
@@ -301,8 +302,18 @@ label.checkbox, .label.checkbox {
   width: 100%;
   background: none;
   border: none;
-  color: white;
-  height: 20px;
+  font-weight: 200;
+  color: #ffffff;
+  font-family: Qanelas-Regular;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0px 0px;
+  text-transform: none;
+  color: #ffffff;
+  height: 30px;
+}
+.field:focus {
+  border: 3px;
 }
 
 .input {
@@ -311,13 +322,22 @@ label.checkbox, .label.checkbox {
 }
 
 .radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8px;
   position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .radio__field {
   font-size: inherit;
   position: absolute;
-  left: 0px;
+  margin: 0px 0px 0px 15px;
+  left: 120px;
   top: 0px;
   z-index: 0;
 }
@@ -333,6 +353,13 @@ label.checkbox, .label.checkbox {
           align-items: center;
   position: relative;
   z-index: 2;
+  font-weight: 200;
+  color: #ffffff;
+  font-family: Qanelas-Regular;
+  font-size: 16px;
+  line-height: 15px;
+  margin: 0px 0px;
+  text-transform: none;
 }
 
 /* 
@@ -365,7 +392,7 @@ label.checkbox, .label.checkbox {
   border-radius: 50%;
   position: absolute;
   left: 5px;
-  top: 5px;
+  top: 10px;
   opacity: 0;
   -webkit-transition: opacity eease 0.3s;
   transition: opacity eease 0.3s;
@@ -499,7 +526,6 @@ label.checkbox, .label.checkbox {
 .marquee {
   margin: 0 auto;
   white-space: nowrap;
-  overflow: hidden;
   position: absolute;
 }
 
